@@ -1,6 +1,6 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 
-const CLAUDE_API_KEY = Deno.env.get("CLAUDE_API_KEY") ?? "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";
+const CLAUDE_API_KEY = Deno.env.get("ANTHROPIC_API_KEY") ?? "";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",

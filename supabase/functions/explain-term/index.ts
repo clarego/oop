@@ -21,7 +21,7 @@ Deno.serve(async (req: Request) => {
       });
     }
 
-    const apiKey = Deno.env.get("CLAUDE_API_KEY");
+    const apiKey = Deno.env.get("ANTHROPIC_API_KEY");
     if (!apiKey) {
       return new Response(JSON.stringify({ error: "CLAUDE_API_KEY not configured" }), {
         status: 500,
